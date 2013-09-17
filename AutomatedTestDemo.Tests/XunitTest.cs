@@ -10,9 +10,15 @@ namespace AutomatedTestDemo.Tests
 	public class XunitTest
 	{
 		[Fact]
-		public void TestMethod1()
+		public void OneEqualsOne()
 		{
 			Assert.Equal(1,1);
 		}
+
+		[Fact]
+		public void OneEqualsTwo()
+		{
+			Assert.Equal(1, 2);
+		}	
 	}
 }

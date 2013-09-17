@@ -11,7 +11,7 @@ namespace AutomatedTestDemo.Tests
 	public class NunitTest
 	{
 		[Test]
-		public void TestMethod1()
+		public void OneEqualsOne()
 		{
 			Assert.AreEqual(1,1);
 		}
