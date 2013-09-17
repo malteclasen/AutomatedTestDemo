@@ -6,7 +6,13 @@ using System.Threading.Tasks;
 
 namespace AutomatedTestDemo.Core
 {
-    public class Class1
-    {
-    }
+	public class Calculator
+	{
+		public double Value { get; set; }
+
+		public void Add(double value)
+		{
+			Value += value;
+		}
+	}
 }

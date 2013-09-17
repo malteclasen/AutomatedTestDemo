@@ -70,6 +70,7 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="CalculatorTests.cs" />
     <Compile Include="MsTest.cs" />
     <Compile Include="NunitTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -78,6 +79,12 @@
   <ItemGroup>
     <None Include="app.config" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\AutomatedTestDemo.Core\AutomatedTestDemo.Core.csproj">
+      <Project>{55e5e584-9799-4797-bf20-f892680a9e65}</Project>
+      <Name>AutomatedTestDemo.Core</Name>
+    </ProjectReference>
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
